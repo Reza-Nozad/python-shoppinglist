@@ -5,8 +5,22 @@ def add_item():
     shoppinglist.append(item)
     print("der Artikel wurde der Liste hinzugefügt")
     print(shoppinglist)
+    
+add_item() 
 
-add_item()  
+
+def show_shoppinglist():
+   
+   if shoppinglist:
+        print ("your shoppinglist ", shoppinglist)
+
+   else:
+       
+        print("shoppinglist ist leer")
+
+show_shoppinglist()
+
+
 
   
 
