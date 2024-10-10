@@ -25,7 +25,7 @@ def show_shoppinglist():
      
 def update_groceries(id, name, amount, price):
     cursor.execute('''
-    UPDATE Students SET name = ?, amount = ?, price = ?
+    UPDATE groceries SET name = ?, amount = ?, price = ?
     WHERE id = ?               
     ''',(name, amount, price, id))
     conn.commit()
