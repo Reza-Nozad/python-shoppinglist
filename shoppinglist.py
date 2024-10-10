@@ -71,7 +71,13 @@ def main():
             delete_groceries(id)
         elif choice == "5":
             print("Programm wird beendet. Auf Wiedersehen!")
+            
+            cursor.execute('''
+              DELETE FROM groceries                
+                  ''')
+            conn.commit()
             break
+        
         else:
             print("Ungültige Eingabe! Bitte wähle 1,2,3,4 oder 5")
 
