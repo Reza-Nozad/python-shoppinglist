@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS groceries (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(32) NOT NULL,
     amount VARCHAR(32) NOT NULL, 
-    price INTEGER NOT NULL
+    price FLOAT NOT NULL
     );
 ''')
 
